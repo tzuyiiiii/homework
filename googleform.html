@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單練習</title>
+    <link rel="stylesheet" href="../0408/reset.css">
+    <link rel="stylesheet" href="googleform.css">
+</head>
+<body>
+    <main>
+        <div class="top-purpleline"></div> 
+        <form action="https://google.com" method="POST" target="_self";>
+            <section class="headerinfo">
+                <h1>F2E02 表單練習</h1>
+                
+                <p>僅供新尖兵 F2E02 表單切版練習作業</p>
+                <hr>
+                <p>g0966423769@gmail.com 切換帳戶</p>
+                
+                <p>未共用的項目</p>
+                <hr>
+                <p class="required-notice">* 表示必填問題</p>
+            </section>
+            <section>
+                <div class="basic">
+                    姓名 <span class="required-notice">*</span>
+                    <input type="text" placeholder="您的回答" required>
+                </div>
+                
+                <div class="basic">
+                    信箱 
+                    <span class="required-notice">*</span>
+                    <input type="email" placeholder="您的回答" required>
+                </div>
+
+                <div class="basic">
+                    生日
+                <!-- <p class="input-desc">日期</p> -->
+                    <input type="date">
+                </div>
+                
+                <div class="basic">
+                    想跟老師說悄悄話
+                    <input type="text" placeholder="您的回答">
+                </div>
+
+                <div class="basic">
+                    喜歡的顏色
+                    <label for="yellow">
+                        <input type="radio" name="col" id="yellow">
+                        黃
+                    </label>
+                    
+                    <label for="green">
+                        <input type="radio" name="col" id="green" >
+                        綠
+                    </label>
+                    <label for="red">
+                        <input type="radio" name="col" id="red" >
+                        紅
+                    </label>
+                </div>
+
+                <div class="basic">
+                    喜歡吃的飲食類型<br>
+                    <label for="chinese">
+                        <input type="checkbox" name="" id="">
+                        中式<br>
+                    </label>
+                    <label for="usa">
+                        <input type="checkbox" name="" id="usa">
+                        美式<br>
+                    </label>
+                    <label for="ti">
+                        <input type="checkbox" name="" id="ti">
+                        泰式<br>
+                    </label>
+                    <label for="it">
+                        <input type="checkbox" name="" id="it">
+                        義式<br>
+                    </label>
+                    <label for="jap">
+                        <input type="checkbox" name="" id="jap">
+                        日式<br>
+                    </label>
+                    <label for="k">
+                        <input type="checkbox" name="" id="k">
+                        韓式<br>
+                    </label>
+                </div>
+
+                <div class="basic" >
+                    <label for="ct" >
+                        最想去的國家 (使用 optgroup 將選項分為不同洲) <br>
+                        <select name="ct" id="ct" class="sel">
+                            <option value="" selected disabled>選擇</option>
+                            <optgroup label="亞州">
+                                <option value="tw">泰國</option>
+                                <option value="jpan">日本</option>
+                                <option value="k">韓國</option>    
+                            </optgroup>
+                            <optgroup label="美洲">
+                                <option value="usa">美國</option>
+                            </optgroup>
+                            <optgroup label="歐洲">
+                                <option value="itl">義大利</option>
+                                <option value="ge">德國</option>
+                                <option value="ua">英國</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </div>
+            </section> 
+            <button class="submit-button">提交</button>
+            <p class="warning-text">請勿利用 Google 表單送出密碼。</p>
+            
+            <p class="footer-info">這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。 - <u>聯絡表單擁有者</u></p>
+            <span class="footer-info">這份表單很可疑嗎？<a href="https://drive.google.com/u/0/abuse?id=AKkXjoydXWY0mgYIjdBkcdDZLucty17…/d/e/1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ/viewform" target="_blank">報告</a></span>
+            
+            
+            <div class="google-logo">Google表單</div> 
+        </form>
+    </main>
+    <footer>
+            
+
+    </footer>
+
+</body>
+</html>
