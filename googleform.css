@@ -1,6 +1,7 @@
 body {
     background-color: rgb(240, 235, 248);
-    margin: 0;
+    font-weight: 600;
+    margin: 0 auto;
     padding: 20px 15px;
     font-family: "Microsoft JhengHei", sans-serif;
     display: flex;
@@ -14,7 +15,7 @@ body {
     color: rgb(103, 58, 183);
 
 }
-.headerinfo{
+.header-info{
     background: white;
     border: 1px solid #dadce0;
     border-radius: 0 0 8px 8px;
@@ -23,12 +24,12 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
     font-size: 12px;
 }
-.basic{
+.field{
     background: white;
     border: 1px solid #dadce0;
     border-radius: 8px;
     padding: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 .required-notice{
@@ -88,5 +89,16 @@ input[type="date"] {
     text-align: center;
     display: inline-block;
     margin: 0;
+}
+.form{
+    text-decoration: none;
+    text-align: center;
+    color: #70757a;
+    font-size: 22px;
+    font-family: 'Product Sans', Arial, sans-serif;
+}
+.clean{
+    border: none;
+    color: #673ab7;
 }
 

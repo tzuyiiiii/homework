@@ -11,7 +11,7 @@
     <main>
         <div class="top-purpleline"></div> 
         <form action="https://google.com" method="POST" target="_self";>
-            <section class="headerinfo">
+            <section class="header-info">
                 <h1>F2E02 表單練習</h1>
                 
                 <p>僅供新尖兵 F2E02 表單切版練習作業</p>
@@ -23,46 +23,46 @@
                 <p class="required-notice">* 表示必填問題</p>
             </section>
             <section>
-                <div class="basic">
+                <div class="field">
                     姓名 <span class="required-notice">*</span>
                     <input type="text" placeholder="您的回答" required>
                 </div>
                 
-                <div class="basic">
+                <div class="field">
                     信箱 
                     <span class="required-notice">*</span>
                     <input type="email" placeholder="您的回答" required>
                 </div>
 
-                <div class="basic">
+                <div class="field">
                     生日
                 <!-- <p class="input-desc">日期</p> -->
                     <input type="date">
                 </div>
                 
-                <div class="basic">
+                <div class="field">
                     想跟老師說悄悄話
                     <input type="text" placeholder="您的回答">
                 </div>
 
-                <div class="basic">
+                <div class="field">
                     喜歡的顏色
                     <label for="yellow">
-                        <input type="radio" name="col" id="yellow">
+                        <input type="radio" name="color" id="yellow">
                         黃
                     </label>
                     
                     <label for="green">
-                        <input type="radio" name="col" id="green" >
+                        <input type="radio" name="color" id="green" >
                         綠
                     </label>
                     <label for="red">
-                        <input type="radio" name="col" id="red" >
+                        <input type="radio" name="color" id="red" >
                         紅
                     </label>
                 </div>
 
-                <div class="basic">
+                <div class="field">
                     喜歡吃的飲食類型<br>
                     <label for="chinese">
                         <input type="checkbox" name="" id="">
@@ -90,7 +90,7 @@
                     </label>
                 </div>
 
-                <div class="basic" >
+                <div class="field" >
                     <label for="ct" >
                         最想去的國家 (使用 optgroup 將選項分為不同洲) <br>
                         <select name="ct" id="ct" class="sel">
@@ -113,19 +113,17 @@
                 </div>
             </section> 
             <button class="submit-button">提交</button>
+            <input type="text">
+            <input class="clean" type="reset" value="清除表單">
+            
             <p class="warning-text">請勿利用 Google 表單送出密碼。</p>
             
             <p class="footer-info">這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。 - <u>聯絡表單擁有者</u></p>
             <span class="footer-info">這份表單很可疑嗎？<a href="https://drive.google.com/u/0/abuse?id=AKkXjoydXWY0mgYIjdBkcdDZLucty17…/d/e/1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ/viewform" target="_blank">報告</a></span>
             
             
-            <div class="google-logo">Google表單</div> 
+            <div class="google-logo">Google<a class="form" href="https://workspace.google.com/products/forms/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"target="_blank">表單</a></div> 
         </form>
     </main>
-    <footer>
-            
-
-    </footer>
-
 </body>
 </html>
