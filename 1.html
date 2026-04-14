@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單</title>
+    <!-- cssreset -->
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <section>
+        <form action="https://www.google.com/webhp" method="get">
+            <div>
+                <!-- 單選區radio -->
+                <label for="bag">
+                    <input type="radio" name="food" id="chinese" >
+                    中式
+                </label>
+            
+                <input type="radio" name="food" id="western">
+                <label for="west">西式</label>
+                <!-- name讓選項在同一個群組 -->
+                <!-- id是代表這個選項的詞 -->
+
+            </div>
+            <!-- <div>複選區checkbox -->
+                <label for="apple">
+                    <input type="checkbox" name="drink" id="apple" >
+                    蘋果汁
+                </label>
+        
+                <input type="checkbox" name="drink" id="papaya">
+                <label for="papaya">木瓜汁</label>
+                <button type="submit">送出</button>
+            </div>
+            <hr>
+
+            <input type="text" name="q" placeholder="想問什麼?" autocomplete="off">
+            <button type="submit">搜尋</button>
+            <!-- type="submit" button在<form>中的預設屬性 送出的意思 -->
+            <!-- placeholder     -->
+            <button type="button">只是按鈕</button>
+            <button type="reset">重置</button>
+
+            <hr>
+            <input type="number" name="零用錢" min="0" max="88" step="4" ><br><!-- 輸入的數字0~88而且是4的倍數  -->
+            <input type="password"  placeholder="密碼"><br>
+            <input type="tel"  placeholder="手機號碼" pattern="09\d{8}" ><br>
+            <input type="email"  placeholder="信箱"><br>
+            <button>送出</button>
+            <!-- required代表必須輸入 -->
+             <!-- 正規表達式pattern -->
+            <!-- 前端驗證 後端驗證 -->
+            <input type="text"placeholder="秘密" readonly>
+            <!-- readonly代表只能讀不能填訊息 -->
+            <hr>
+            <input type="datetime-local" min="2026-04-20">
+            <input type="button" value="input.button">
+            <input type="submit" value="input.submit">
+            <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQty6YxTuRrUXnsFootBEq2lqnCalTfGqaj7A&s">
+            <!-- input type="image 一個圖片按鈕 -->
+            <input type="range">
+            <input type="hidden" value="登入的密鑰">
+            <!-- 使用者不需要知道的東西但瀏覽器或作者需要知道 -->
+            <hr>
+            <label for="A">心得感想</label>
+            <textarea name="Q" id="A">心得</textarea>
+
+            <!-- 下拉式選單select>option -->
+            <div>
+            <label for="ct">喜歡的國家</label>
+            <select name="ct" id="ct">
+                <option value="" selected disabled>請選擇</option>
+                <optgroup label="亞州">
+                    <option value="tw">台灣</option>
+                    <option value="jpan">日本</option>
+                </optgroup>
+                <optgroup label="美洲">
+                    <option value="usa">美國</option>
+                </optgroup>
+            </select>
+            </div>
+            <!-- 進度條 -->
+            <progress value="20" max="100">學習進度</progress>
+             
+        </form>
+
+    </section>
+</body>
+</html>
