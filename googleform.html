@@ -6,6 +6,7 @@
     <title>表單練習</title>
     <link rel="stylesheet" href="../0408/reset.css">
     <link rel="stylesheet" href="googleform.css">
+    <script src="googleform.js" defer></script>
 </head>
 <body>
     <main>
@@ -45,7 +46,7 @@
                     <input type="text" placeholder="您的回答">
                 </div>
 
-                <div class="field">
+                <div id="favcolor" class="favcolor">
                     喜歡的顏色
                     <label for="yellow">
                         <input type="radio" name="color" id="yellow">
@@ -60,6 +61,9 @@
                         <input type="radio" name="color" id="red" >
                         紅
                     </label>
+                    <p id="clr" class="clr">清除表單</p>
+                    
+                    
                 </div>
 
                 <div class="field">
